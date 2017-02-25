@@ -21,13 +21,13 @@ function printElements(data) {
         
         switch (category) {
             case "TopHeadline":
-                $("<a href='" + url + "' style='font-family: monospace; color:" + color + "' target='_blank'>" + 
+                $("<a href='" + url + "' style='font-family: monospace; text-decoration: underline; color:" + color + "' target='_blank'>" + 
                   ((image) ? "<img src='" + image + "' style='max-width: 320px;'><br>" : "")    +               
                   "    <strong>" + title + "</strong></a><br>")
                 .appendTo("#" + category);
                 break;
             case "MainHeadline":
-                $(((image) ? "<img src='" + image + "'><br>" : "") +
+                $(((image) ? "<img src='" + image + "' class='img-responsive center-block' style='max-width: 500px;'><br>" : "") +
                   "  <a href='" + url + "' style='font-size: 3em; text-decoration: underline; font-family: sans-serif; color:" + color + "' target='_blank'>" + 
                   "    <strong>" + title + "</strong></a>")
                 .appendTo("#" + category);
@@ -35,7 +35,7 @@ function printElements(data) {
             default:
                 $("<li class='list-group-item' style='border-left: none; border-right: none; padding: 4px;'>" + 
                   ((image) ? "<img src='" + image + "' style='max-width: 320px;'><br>" : "") +
-                  "  <a href='" + url + "' style='font-family: monospace; color:" + color + "' target='_blank'>" + 
+                  "  <a href='" + url + "' style='font-family: monospace; text-decoration: underline; color:" + color + "' target='_blank'>" + 
                   "    <strong>" + title + "</strong></a></li>")
                 .appendTo("#" + category);
                 break;
