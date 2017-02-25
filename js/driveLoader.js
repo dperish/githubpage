@@ -27,7 +27,7 @@ function printElements(data) {
                 .appendTo("#" + category);
                 break;
             case "MainHeadline":
-                $(((image) ? "<img src='" + image + "' class='img-responsive center-block' style='max-width: 500px;'><br>" : "") +
+                $(((image) ? "<img src='" + image + "' class='img-responsive center-block' style='width: 500px;'><br>" : "") +
                   "  <a href='" + url + "' style='font-size: 3em; text-decoration: underline; font-family: sans-serif; color:" + color + "' target='_blank'>" + 
                   "    <strong>" + title + "</strong></a>")
                 .appendTo("#" + category);
