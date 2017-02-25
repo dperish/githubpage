@@ -28,7 +28,7 @@ function printElements(data) {
                 break;
             case "MainHeadline":
                 $(((image) ? "<img src='" + image + "' class='img-responsive center-block'><br>" : "") +
-                  "  <a href='" + url + "' style='font-size: 3em; text-decoration: underline; font-family: sans-serif; color:" + color + "' target='_blank'>" + 
+                  "  <a href='" + url + "' class='text-center' style='font-size: 3em; text-decoration: underline; font-family: sans-serif; color:" + color + "' target='_blank'>" + 
                   "    <strong>" + title + "</strong></a>")
                 .appendTo("#" + category);
                 break;
