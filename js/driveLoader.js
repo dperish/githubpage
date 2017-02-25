@@ -1,3 +1,9 @@
+$(document).ready(function() {
+    setInterval(function () {
+        document.location.reload();
+    }, 120000);
+});
+
 briefcase.getJSON({
     id: "1dBgx1A9_gA_3c_rKC5IpsvLj6ubQY_1Q0Ee51QPOZ-4",
     leftColumnTitle: "category"
