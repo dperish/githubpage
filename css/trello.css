@@ -1,0 +1,30 @@
+#TopHeadline a {
+}
+
+#TopHeadline a img {
+    max-width: 320px;
+}
+
+#MainHeadline {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 3em; 
+    text-decoration: underline; 
+    font-family: sans-serif;
+}
+
+.vertical-border {
+    border-left: 1px solid #ddd;
+}
+
+body {
+    margin-top: 44px;
+}
+
+#ColumnA li > img,
+#ColumnB li > img,
+#ColumnC li > img {
+    width: 99%;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
