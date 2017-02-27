@@ -13,6 +13,11 @@
     font-family: sans-serif;
 }
 
+#MainHeadline a {
+    display: block;
+    text-align: center;
+}
+
 .vertical-border {
     border-left: 1px solid #ddd;
 }
