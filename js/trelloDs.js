@@ -81,7 +81,7 @@ $(document).ready(function() {
                 .appendTo("#" + category);
                 break;
             case "MainHeadline":
-                $(((image) ? "<img src='" + image + "'><br>" : "") +
+                $(((image) ? "<img src='" + image + "' class='img-responsive'><br>" : "") +
                   "  <a href='" + url + "' style='color:" + color + "' target='_blank'>" + 
                   "    <strong>" + title + "</strong></a>")
                 .appendTo("#" + category);
