@@ -84,7 +84,6 @@ $(document).ready(function() {
 
         if (url.indexOf("//") > -1) {
             favicon = url.split("/")[0] + "//" + url.split("/")[2] + "/favicon.ico";
-            favicon = favicon.replace("https:", "").replace("http:", "")
         }
 
         switch (category) {
