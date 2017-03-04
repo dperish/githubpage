@@ -18,7 +18,10 @@
 $(document).ready(function() {
 
     var boardId = "jmzm4mzE";
-    trelloDs.get(boardId, function (data) { parseData(data); });
+    trelloDs.get(boardId, function (data) { 
+        parseData(data);
+        $("#appContainer").fadeIn(400);
+    });
 
     function parseData(data) {
 
@@ -81,7 +84,7 @@ $(document).ready(function() {
                 .appendTo("#" + category);
                 break;
             case "MainHeadline":
-                $(((image) ? "<img src='" + image + "' class='img-responsive center-block'><br>" : "") +
+                $(((image) ? "<img src='" + image + "' class='img-responsive center-block'>" : "") +
                   "  <a href='" + url + "' style='color:" + color + "; display: block;' class='text-center' target='_blank'>" + 
                   "    <strong>" + title + "</strong></a>")
                 .appendTo("#" + category);

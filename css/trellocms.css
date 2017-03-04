@@ -2,12 +2,13 @@
 }
 
 #TopHeadline a img {
-    max-width: 320px;
+    max-width: 640px;
+    max-height: 320px;
 }
 
 #MainHeadline {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
     font-size: 3em; 
     text-decoration: underline; 
     font-family: sans-serif;
@@ -16,6 +17,11 @@
 #MainHeadline a {
     display: block;
     text-align: center;
+}
+
+#MainHeadline a img {
+    max-width: 640px;
+    max-height: 320px;
 }
 
 .vertical-border {
