@@ -10,6 +10,7 @@ $(document).ready(function() {
         for(var i = 0; i < positions.length; i++) {
             renderPosition(positions[i]);
         }
+        alert(positions);
     })
 
     $("#dropButton").on("click", function () {
