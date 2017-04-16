@@ -10,12 +10,12 @@ $(document).ready(function() {
         for(var i = 0; i < positions.length; i++) {
             renderPosition(positions[i]);
         }
-        alert(positions);
     })
 
     $("#dropButton").on("click", function () {
         navigator.geolocation.getCurrentPosition(function(pos) {
 
+            alert(pos.coords.latitude);
             var position = {
                 "latitude": pos.coords.latitude,
                 "longitude": pos.coords.longitude,
