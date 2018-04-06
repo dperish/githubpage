@@ -93,7 +93,7 @@ $(document).ready(function() {
                 $("<li class='list-group-item' style='border-left: none; border-right: none; padding: 4px;'>" + 
                   ((image) ? "<img src='" + image + "' class='img-responsive'><br>" : "") +
                   "  <a href='" + url + "' style='color:" + color + "' target='_blank'>" + 
-                  ((favicon) ? "  <img src='"+ favicon + "' style='width: 16px;' />" : "<span style='display: inline-block; min-width: 24px;'></span>" ) +
+                  ((favicon) ? "  <img src='"+ favicon + "' class='favicon' style='width: 16px;' />" : "<span style='display: inline-block; min-width: 24px;'></span>" ) +
                   "    <strong>" + title + "</strong></a></li>")
                 .appendTo("#" + category);
                 break;
